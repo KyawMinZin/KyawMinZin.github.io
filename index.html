@@ -13,11 +13,16 @@
 		.typed-cursor{
 			display: none;
 		}
-		.liveChat {
+		
+		button.liveChat {
 			position:fixed;
 			bottom:0;
 			color:white;
-			background-color: yellow;
+		    border-radius: 6px;
+		    border: none;
+		    background: #ffda60;
+		    height: 2rem;
+			
 		}
 	</style>
 
@@ -25,8 +30,8 @@
 
 </head>
 <body>
-	
-	<button onclick="LiveChatWidget.call (http://livechatwidget.call/)('maximize');return false;" class="liveChat">LiveChat</button>
+	<button> <a href="#" onclick="LiveChatWidget.call('maximize');return false;">LiveChat</a> </button>
+<!-- 	<button onclick="LiveChatWidget.call (http://livechatwidget.call/)('maximize');return false;" class="liveChat">LiveChat</button> -->
 <!-- 	<a href="https://direct.lc.chat/13345533/" class="liveChat">LiveChat</a> -->
 	<div id="navigation">		
 		<div class="header">
