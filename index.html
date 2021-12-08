@@ -14,15 +14,21 @@
 			display: none;
 		}
 		
-		button.liveChat {
-			position:fixed;
-			bottom:0;
-			color:white;
-		    border-radius: 6px;
+		button#LiveChats {
+		    position: fixed;
+		    bottom: 0;
+		}
+		.whatsapp {
+		    background-color: green;
+		    color: white;
+		    height: 2.5rem;
 		    border: none;
-		    background: #ffda60;
-		    height: 2rem;
-			
+		}
+		.OnlineLiveChat {
+		    background: #ffda60; 
+		    color: white;
+		    height: 2.5rem;
+		    border: none;
 		}
 	</style>
 
@@ -33,6 +39,30 @@
 	<button class="liveChat"> <a href="#" onclick="LiveChatWidget.call('maximize');return false;">LiveChat</a> </button>
 <!-- 	<button onclick="LiveChatWidget.call (http://livechatwidget.call/)('maximize');return false;" class="liveChat">LiveChat</button> -->
 <!-- 	<a href="https://direct.lc.chat/13345533/" class="liveChat">LiveChat</a> -->
+	
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="LiveChats">
+			Support
+		</button>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Choose Your Online Support Platform</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<button class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+19562909999" >WhatsApp</a></button>
+					<button class="OnlineLiveChat"><a href="#" onclick="LiveChatWidget.call('maximize');return false;">LiveChat</a></button>
+				</div>
+				
+			</div>
+			</div>
+		</div>
 	<div id="navigation">		
 		<div class="header">
 			<nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top"> 		
