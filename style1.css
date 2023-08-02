@@ -188,7 +188,14 @@ h2, .about h3
     background-color: #273748;
     border-color: #007bff00;
 }
-
+.skill_tags span{
+    color: black;
+    background: #ffda60;
+    padding: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    margin: 0 2px;
+}
 /*contact*/
 #contact
 {
